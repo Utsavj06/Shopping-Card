@@ -31,9 +31,7 @@ const CartCard = ({allItem}) => {
           <Box height='65vh' width='50%'>
             {arrayData.map(item=>{
                 return <Box key={item.id}>
-                         <ItemCard item={item.item}
-                                   price={item.price * item.quantity}
-                                   quantity={item.quantity} />
+                         <ItemCard item={item} />
                        </Box>
             })}
           </Box>
